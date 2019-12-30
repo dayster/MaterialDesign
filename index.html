@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Material Design for Bootstrap</title>
+    <!-- MDB icon -->
+    <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Material Design Bootstrap -->
+    <link rel="stylesheet" href="css/mdb.min.css">
+    <!-- Your custom styles (optional) -->
+    <link rel="stylesheet" href="css/style.css">
+    <style type="text/css">
+        .checked {
+            color: orange;
+        }
+    </style>
+</head>
+
+<body>
+    <!--Main Navigation-->
+    <header>
+        <!--Navbar -->
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark indigo">
+            <a class="navbar-brand" href="#">KMD</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-555" aria-controls="navbarSupportedContent-555" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent-555">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home
+              <span class="sr-only">(current)</span>
+            </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Events</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-555" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Contact
+            </a>
+                        <div class="dropdown-menu dropdown-secondary" aria-labelledby="navbarDropdownMenuLink-555">
+                            <a class="dropdown-item" href="#">Contact Us</a>
+                            <a class="dropdown-item" href="#">Branches</a>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto nav-flex-icons">
+                    <!-- <li class="nav-item">
+            <a class="nav-link waves-effect waves-light">1
+              <i class="fas fa-envelope"></i>
+            </a>
+          </li> -->
+                    <li class="nav-item avatar dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-55" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-2.jpg" class="rounded-circle z-depth-0" alt="avatar image" style="height: 35px;">
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-lg-right dropdown-secondary" aria-labelledby="navbarDropdownMenuLink-55">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!--/.Navbar -->
+        <!--Carousel Wrapper-->
+        <div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel">
+            <!--Indicators-->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-2" data-slide-to="1"></li>
+                <li data-target="#carousel-example-2" data-slide-to="2"></li>
+            </ol>
+            <!--/.Indicators-->
+            <!--Slides-->
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                    <div class="view">
+                        <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(68).jpg" alt="First slide">
+                        <div class="mask rgba-black-light"></div>
+                    </div>
+                    <div class="carousel-caption">
+                        <h3 class="h3-responsive">Light mask</h3>
+                        <p>First text</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <!--Mask color-->
+                    <div class="view">
+                        <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(6).jpg" alt="Second slide">
+                        <div class="mask rgba-black-strong"></div>
+                    </div>
+                    <div class="carousel-caption">
+                        <h3 class="h3-responsive">Strong mask</h3>
+                        <p>Secondary text</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <!--Mask color-->
+                    <div class="view">
+                        <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(9).jpg" alt="Third slide">
+                        <div class="mask rgba-black-slight"></div>
+                    </div>
+                    <div class="carousel-caption">
+                        <h3 class="h3-responsive">Slight mask</h3>
+                        <p>Third text</p>
+                    </div>
+                </div>
+            </div>
+            <!--/.Slides-->
+            <!--Controls-->
+            <a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+            <!--/.Controls-->
+        </div>
+        <!--/.Carousel Wrapper-->
+    </header>
+    <!--Main Navigation-->
+
+    <!--Main layout-->
+    <main class="mt-3">
+        <!--Main container-->
+        <div class="container">
+            <!-- Service Section -->
+            <section id="best-features" class="text-center">
+
+                <!-- Heading -->
+                <h2 class="mb-5 font-weight-bold">Our Services</h2>
+
+                <!--Grid row-->
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-4 mb-3">
+                        <i class="fa fa-laptop fa-4x orange-text"></i>
+                        <h4 class="my-4 font-weight-bold">IT</h4>
+                        <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima assumenda deleniti hic.</p>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-md-4 mb-1">
+                        <i class="fa fa-user-graduate fa-4x orange-text"></i>
+                        <h4 class="my-4 font-weight-bold">Education</h4>
+                        <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima assumenda deleniti hic.</p>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-md-4 mb-1">
+                        <i class="fa fa-book-open fa-4x orange-text"></i>
+                        <h4 class="my-4 font-weight-bold">Books & Library</h4>
+                        <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima assumenda deleniti hic.</p>
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+                <!--Grid row-->
+
+            </section>
+            <!-- Service Section -->
+            <!--Courses Row-->
+            <div class="row">
+                <div class="col-lg-12 col-md-12 mb-12">
+                    <h2 class="mb-3 font-weight-bold">Our Courses</h2>
+                </div>
+                <!--Grid column-->
+                <div class="col-lg-4 col-md-6 mb-4">
+
+                    <!-- Card -->
+                    <div class="card">
+
+                        <!-- Card image -->
+                        <div class="view overlay zoom">
+                            <img src="img/courses/course1.jpg" alt="Card image cap" class="img-fluid " alt="zoom">
+                            <div class="mask flex-center waves-effect waves-light">
+                                <button type="button" class="btn btn-primary btn-rounded">Enroll Now</button>
+                            </div>
+                        </div>
+
+                        <!-- Card content -->
+                        <div class="card-body">
+
+                            <!-- Title -->
+                            <h4 class="card-title">PHP Web Development</h4>
+                            <hr>
+                            <!-- Text -->
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <div>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                        </div>
+
+                        <!-- Card footer -->
+                        <div class="rounded-bottom mdb-color indigo text-center pt-3">
+                            <ul class="list-unstyled list-inline font-small">
+                                <li class="list-inline-item pr-2 white-text"><i class="fa fa-users pr-1"></i>2.4k Enrolled</li>
+                                <li class="list-inline-item pr-2"><a href="#" class="white-text"><i class="fa fa-calendar pr-1"></i>2 Months</a></li>
+                                <li class="list-inline-item pr-2"><a href="#" class="white-text"><i class="fa fa-clock pr-1"> </i>10:30 - 12:30</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Card -->
+
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-4 col-md-6 mb-4">
+
+                    <!-- Card -->
+                    <div class="card">
+
+                        <!-- Card image -->
+                        <div class="view overlay zoom">
+                            <img src="img/courses/course2.jpg" alt="Card image cap" class="img-fluid " alt="zoom">
+                            <div class="mask flex-center waves-effect waves-light">
+                                <button type="button" class="btn btn-primary btn-rounded">Enroll Now</button>
+                            </div>
+                        </div>
+
+                        <!-- Card content -->
+                        <div class="card-body">
+
+                            <!-- Title -->
+                            <h4 class="card-title">Basic Web Design</h4>
+                            <hr>
+                            <!-- Text -->
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <div>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                        </div>
+
+                        <!-- Card footer -->
+                        <div class="rounded-bottom mdb-color indigo text-center pt-3">
+                            <ul class="list-unstyled list-inline font-small">
+                                <li class="list-inline-item pr-2 white-text"><i class="fa fa-users pr-1"></i>2.4k Enrolled</li>
+                                <li class="list-inline-item pr-2"><a href="#" class="white-text"><i class="fa fa-calendar pr-1"></i>2 Months</a></li>
+                                <li class="list-inline-item pr-2"><a href="#" class="white-text"><i class="fa fa-clock pr-1"> </i>10:30 - 12:30</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Card -->
+
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-4 col-md-6 mb-4">
+
+                    <!-- Card -->
+                    <div class="card">
+
+                        <!-- Card image -->
+                        <div class="view overlay zoom">
+                            <img src="img/courses/course3.jpg" alt="Card image cap" class="img-fluid " alt="zoom">
+                            <div class="mask flex-center waves-effect waves-light">
+                                <button type="button" class="btn btn-primary btn-rounded">Enroll Now</button>
+                            </div>
+                        </div>
+
+                        <!-- Card content -->
+                        <div class="card-body">
+
+                            <!-- Title -->
+                            <h4 class="card-title">Java Web Development</h4>
+                            <hr>
+                            <!-- Text -->
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <div>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                        </div>
+
+                        <!-- Card footer -->
+                        <div class="rounded-bottom mdb-color indigo text-center pt-3">
+                            <ul class="list-unstyled list-inline font-small">
+                                <li class="list-inline-item pr-2 white-text"><i class="fa fa-users pr-1"></i>2.4k Enrolled</li>
+                                <li class="list-inline-item pr-2"><a href="#" class="white-text"><i class="fa fa-calendar pr-1"></i>2 Months</a></li>
+                                <li class="list-inline-item pr-2"><a href="#" class="white-text"><i class="fa fa-clock pr-1"> </i>10:30 - 12:30</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Card -->
+
+                </div>
+                <!--Grid column-->
+
+            </div>
+            <!--End Courses Row-->
+
+            <!--News Row-->
+            <div class="row">
+                <div class="col-lg-12 col-md-12 mb-12">
+                    <h2 class="mb-3 font-weight-bold">Latest News</h2>
+                </div>
+                <!--Grid column-->
+                <div class="col-lg-4 col-md-6 mb-4">
+
+                    <!-- New -->
+                    <div class="card">
+
+                        <!-- Card image -->
+                        <div class="view overlay">
+                            <img class="card-img-top" src="https://mdbootstrap.com/img/Mockups/Lightbox/Thumbnail/img%20(67).jpg" alt="Card image cap">
+                            <a href="#!">
+                                <div class="mask rgba-white-slight"></div>
+                            </a>
+                        </div>
+
+                        <!-- Card content -->
+                        <div class="card-body">
+
+                            <!-- Title -->
+                            <h4 class="card-title">New Title</h4>
+                            <!-- Text -->
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <!-- Button -->
+                            <a href="#" class="btn btn-primary">Read More</a>
+
+                        </div>
+
+                    </div>
+
+                    <!-- End New -->
+
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-4 col-md-6 mb-4">
+
+                    <!-- New -->
+                    <div class="card">
+
+                        <!-- Card image -->
+                        <div class="view overlay">
+                            <img class="card-img-top" src="https://mdbootstrap.com/img/Mockups/Lightbox/Thumbnail/img%20(67).jpg" alt="Card image cap">
+                            <a href="#!">
+                                <div class="mask rgba-white-slight"></div>
+                            </a>
+                        </div>
+
+                        <!-- Card content -->
+                        <div class="card-body">
+
+                            <!-- Title -->
+                            <h4 class="card-title">New Title</h4>
+                            <!-- Text -->
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <!-- Button -->
+                            <a href="#" class="btn btn-primary">Read More</a>
+
+                        </div>
+
+                    </div>
+                    <!-- End New -->
+
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-4 col-md-6 mb-4">
+
+                    <!-- New -->
+                    <div class="card">
+
+                        <!-- Card image -->
+                        <div class="view overlay">
+                            <img class="card-img-top" src="https://mdbootstrap.com/img/Mockups/Lightbox/Thumbnail/img%20(67).jpg" alt="Card image cap">
+                            <a href="#!">
+                                <div class="mask rgba-white-slight"></div>
+                            </a>
+                        </div>
+
+                        <!-- Card content -->
+                        <div class="card-body">
+
+                            <!-- Title -->
+                            <h4 class="card-title">New Title</h4>
+                            <!-- Text -->
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <!-- Button -->
+                            <a href="#" class="btn btn-primary">Read More</a>
+
+                        </div>
+
+                    </div>
+                    <!-- End New -->
+
+                </div>
+                <!--Grid column-->
+
+            </div>
+            <!--End News Row-->
+
+            <!--Events Row-->
+
+            <div class="row">
+                <div class="col-lg-12 col-md-12 mb-12">
+                    <h2 class="mb-3 font-weight-bold">Latest Events</h2>
+                </div>
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-4 mb-4">
+
+                    <!-- Event -->
+                    <div class="view overlay zoom">
+                        <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/6-col/img%20(131).jpg" class="img-fluid " alt="zoom">
+                        <div class="mask flex-center waves-effect waves-light">
+                            <p class="white-text">Zoom effect</p>
+                        </div>
+                    </div>
+                    <!-- End Event -->
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-4 mb-4">
+
+                    <!-- Event -->
+                    <div class="view overlay zoom">
+                        <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/6-col/img%20(131).jpg" class="img-fluid " alt="zoom">
+                        <div class="mask flex-center waves-effect waves-light">
+                            <p class="white-text">Zoom effect</p>
+                        </div>
+                    </div>
+                    <!-- End Event -->
+
+                </div>
+                <!--Grid column-->
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-4 mb-4">
+
+                    <!-- Event -->
+                    <div class="view overlay zoom">
+                        <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/6-col/img%20(131).jpg" class="img-fluid " alt="zoom">
+                        <div class="mask flex-center waves-effect waves-light">
+                            <p class="white-text">Zoom effect</p>
+                        </div>
+                    </div>
+                    <!-- End Event -->
+
+                </div>
+                <!--Grid column-->
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-4 mb-4">
+
+                    <!-- Event -->
+                    <div class="view overlay zoom">
+                        <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/6-col/img%20(131).jpg" class="img-fluid " alt="zoom">
+                        <div class="mask flex-center waves-effect waves-light">
+                            <p class="white-text">Zoom effect</p>
+                        </div>
+                    </div>
+                    <!-- End Event -->
+
+                </div>
+                <!--Grid column-->
+
+            </div>
+            <!--End Events Row-->
+
+            <!--Testimonials Row-->
+            
+            <div class="row">
+                <div class="col-lg-12 col-md-12 mb-12">
+                  <h2 class="mb-3 font-weight-bold">Testimonials</h2>
+              </div>
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-4 mb-4">
+
+                    <!-- Testimonial -->
+                    <div class="card testimonial-card">
+
+                        <!-- Background color -->
+                        <div class="card-up indigo lighten-1"></div>
+
+                        <!-- Avatar -->
+                        <div class="avatar mx-auto white mt-3">
+                            <img src="https://mdbootstrap.com/img/Others/documentation/img%20(27)-mini.jpg" class="rounded-circle" alt="woman avatar">
+                        </div>
+
+                        <!-- Content -->
+                        <div class="card-body">
+                            <!-- Name -->
+                            <h4 class="card-title">Anna Doe</h4>
+                            <hr>
+                            <!-- Quotation -->
+                            <p><i class="fas fa-quote-left"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, adipisci</p>
+                        </div>
+
+                    </div>
+                    <!-- End Testimonial -->
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-4 mb-4">
+
+                    <!-- Testimonial -->
+                    <div class="card testimonial-card">
+
+                        <!-- Background color -->
+                        <div class="card-up indigo lighten-1"></div>
+
+                        <!-- Avatar -->
+                        <div class="avatar mx-auto white mt-3">
+                            <img src="https://mdbootstrap.com/img/Others/documentation/img%20(27)-mini.jpg" class="rounded-circle" alt="woman avatar">
+                        </div>
+
+                        <!-- Content -->
+                        <div class="card-body">
+                            <!-- Name -->
+                            <h4 class="card-title">Anna Doe</h4>
+                            <hr>
+                            <!-- Quotation -->
+                            <p><i class="fas fa-quote-left"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, adipisci</p>
+                        </div>
+
+                    </div>
+                    <!-- End Testimonial -->
+
+                </div>
+                <!--Grid column-->
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-4 mb-4">
+
+                    <!-- Testimonial -->
+                    <div class="card testimonial-card">
+
+                        <!-- Background color -->
+                        <div class="card-up indigo lighten-1"></div>
+
+                        <!-- Avatar -->
+                        <div class="avatar mx-auto white mt-3">
+                            <img src="https://mdbootstrap.com/img/Others/documentation/img%20(27)-mini.jpg" class="rounded-circle" alt="woman avatar">
+                        </div>
+
+                        <!-- Content -->
+                        <div class="card-body">
+                            <!-- Name -->
+                            <h4 class="card-title">Anna Doe</h4>
+                            <hr>
+                            <!-- Quotation -->
+                            <p><i class="fas fa-quote-left"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, adipisci</p>
+                        </div>
+
+                    </div>
+                    <!-- End Testimonial -->
+
+                </div>
+                <!--Grid column-->
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-4 mb-4">
+
+                    <!-- Testimonial -->
+                    <div class="card testimonial-card">
+
+                        <!-- Background color -->
+                        <div class="card-up indigo lighten-1"></div>
+
+                        <!-- Avatar -->
+                        <div class="avatar mx-auto white mt-3">
+                            <img src="https://mdbootstrap.com/img/Others/documentation/img%20(27)-mini.jpg" class="rounded-circle" alt="woman avatar">
+                        </div>
+
+                        <!-- Content -->
+                        <div class="card-body">
+                            <!-- Name -->
+                            <h4 class="card-title">Anna Doe</h4>
+                            <hr>
+                            <!-- Quotation -->
+                            <p><i class="fas fa-quote-left"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, adipisci</p>
+                        </div>
+
+                    </div>
+                    <!-- End Testimonial -->
+
+                </div>
+                <!--Grid column-->
+
+            </div>
+            <!--End Testimonials Row-->
+            
+
+            
+            <div class="row mb-4">
+              <div class="col-lg-12 col-md-12 mb-12">
+                  <h2 class="mb-3 font-weight-bold">Our Partners</h2>
+              </div>
+              <div class="col">
+                <div class="view overlay zoom">
+                    <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/6-col/img%20(131).jpg" class="img-fluid " alt="zoom">
+                    <div class="mask flex-center waves-effect waves-light">
+                        <p class="white-text">Zoom effect</p>
+                    </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="view overlay zoom">
+                    <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/6-col/img%20(131).jpg" class="img-fluid " alt="zoom">
+                    <div class="mask flex-center waves-effect waves-light">
+                        <p class="white-text">Zoom effect</p>
+                    </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="view overlay zoom">
+                    <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/6-col/img%20(131).jpg" class="img-fluid " alt="zoom">
+                    <div class="mask flex-center waves-effect waves-light">
+                        <p class="white-text">Zoom effect</p>
+                    </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="view overlay zoom">
+                    <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/6-col/img%20(131).jpg" class="img-fluid " alt="zoom">
+                    <div class="mask flex-center waves-effect waves-light">
+                        <p class="white-text">Zoom effect</p>
+                    </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="view overlay zoom">
+                    <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/6-col/img%20(131).jpg" class="img-fluid " alt="zoom">
+                    <div class="mask flex-center waves-effect waves-light">
+                        <p class="white-text">Zoom effect</p>
+                    </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="view overlay zoom">
+                    <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/6-col/img%20(131).jpg" class="img-fluid " alt="zoom">
+                    <div class="mask flex-center waves-effect waves-light">
+                        <p class="white-text">Zoom effect</p>
+                    </div>
+                </div>
+              </div>
+            </div>
+       </div>
+        <!--End Main Container-->
+    </main>
+    <!--Main layout-->
+    <!-- Footer -->
+    <footer class="page-footer font-small indigo">
+
+        <!-- Social buttons -->
+        <div class="primary-color">
+            <div class="container">
+                <!--Grid row-->
+                <div class="row py-4 d-flex align-items-center">
+
+                    <!--Grid column-->
+                    <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+                        <h6 class="mb-0 white-text">Get connected with us on social networks!</h6>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-md-6 col-lg-7 text-center text-md-right">
+                        <!--Facebook-->
+                        <a class="fb-ic ml-0">
+                            <i class="fab fa-facebook white-text mr-4"> </i>
+                        </a>
+                        <!--Twitter-->
+                        <a class="tw-ic">
+                            <i class="fab fa-twitter white-text mr-4"> </i>
+                        </a>
+                        <!--Google +-->
+                        <a class="gplus-ic">
+                            <i class="fab fa-google-plus white-text mr-4"> </i>
+                        </a>
+                        <!--Linkedin-->
+                        <a class="li-ic">
+                            <i class="fab fa-linkedin white-text mr-4"> </i>
+                        </a>
+                        <!--Instagram-->
+                        <a class="ins-ic">
+                            <i class="fab fa-instagram white-text mr-lg-4"> </i>
+                        </a>
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+                <!--Grid row-->
+            </div>
+        </div>
+        <!-- Social buttons -->
+
+        <!--Footer Links-->
+        <div class="container mt-5 mb-4 text-md-left">
+            <div class="row mt-3">
+
+                <!--First column-->
+                <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
+                    <h6 class="text-uppercase font-weight-bold">
+                        <strong>About KMD</strong>
+                    </h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>KMD was founded in 1986 as a Training Institute. Now it holds presence in complete Technology paradigm of country with 900+ workforce.</p>
+                </div>
+                <!--/.First column-->
+
+                <!--Second column-->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <h6 class="text-uppercase font-weight-bold">
+                        <strong>Products</strong>
+                    </h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>
+                        <a href="#!">MDBootstrap</a>
+                    </p>
+                    <p>
+                        <a href="#!">MDWordPress</a>
+                    </p>
+                    <p>
+                        <a href="#!">BrandFlow</a>
+                    </p>
+                    <p>
+                        <a href="#!">Bootstrap Angular</a>
+                    </p>
+                </div>
+                <!--/.Second column-->
+
+                <!--Third column-->
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <h6 class="text-uppercase font-weight-bold">
+                        <strong>Useful links</strong>
+                    </h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>
+                        <a href="#!">Your Account</a>
+                    </p>
+                    <p>
+                        <a href="#!">Become an Affiliate</a>
+                    </p>
+                    <p>
+                        <a href="#!">Shipping Rates</a>
+                    </p>
+                    <p>
+                        <a href="#!">Help</a>
+                    </p>
+                </div>
+                <!--/.Third column-->
+
+                <!--Fourth column-->
+                <div class="col-md-4 col-lg-3 col-xl-3">
+                    <h6 class="text-uppercase font-weight-bold">
+                        <strong>Contact</strong>
+                    </h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>
+                        <i class="fas fa-home mr-3"></i></i>No 174-182, Pansodan Road
+                        <!-- (Middle Block) -->, Kyauktada Township, Yangon, Myanmar</p>
+                    <p>
+                        <i class="fa fa-envelope mr-3"></i> enquiry@kmdcomputer.com</p>
+                    <p>
+                        <i class="fa fa-phone mr-3"></i> + 01 234 567 88</p>
+                    <p>
+                        <i class="fa fa-print mr-3"></i> + 01 234 567 89</p>
+                </div>
+                <!--/.Fourth column-->
+
+            </div>
+        </div>
+        <!--/.Footer Links-->
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2018 Copyright:
+            <a href="https://mdbootstrap.com/bootstrap-tutorial/"> MDBootstrap.com</a>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+
+    <!-- Footer -->
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Your custom scripts (optional) -->
+
+    <script type="text/javascript">
+        // Initialization
+    </script>
+</body>
+
+</html>
