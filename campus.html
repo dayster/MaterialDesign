@@ -9,7 +9,7 @@
     <!-- MDB icon -->
     <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon">
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- Material Design Bootstrap -->
@@ -19,6 +19,39 @@
     <style type="text/css">
         .checked {
             color: orange;
+        }
+        /*.gallery {
+            -webkit-column-count: 3;
+            -moz-column-count: 3;
+            column-count: 3;
+            -webkit-column-width: 33%;
+            -moz-column-width: 33%;
+            column-width: 33%; 
+        }*/
+        .gallery .pics {
+            -webkit-transition: all 350ms ease;
+            transition: all 350ms ease; }
+            .gallery .animation {
+            -webkit-transform: scale(1);
+            -ms-transform: scale(1);
+            transform: scale(1); 
+        }
+        @media (max-width: 450px) {
+            .gallery {
+                -webkit-column-count: 1;
+                -moz-column-count: 1;
+                column-count: 1;
+                -webkit-column-width: 100%;
+                -moz-column-width: 100%;
+                column-width: 100%;
+                }
+        }
+
+        @media (max-width: 400px) {
+            .btn.filter {
+                padding-left: 1.1rem;
+                padding-right: 1.1rem;
+            }
         }
     </style>
 </head>
@@ -40,20 +73,21 @@
                     <li class="nav-item">
                         <a class="nav-link" href="about.html">About Us</a>
                     </li>
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link" href="services.html">Services</a>
-                        <span class="sr-only">(current)</span>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="courses.html">Courses</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="news.html">News</a>
+                        <a class="nav-link" href="news.html">News
+                        	<span class="sr-only">(current)</span>
+                        </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Events</a>
                     </li>
-                    <li class="nav-item dropdown">
+                    <li class="nav-item dropdown active">
                         <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-555" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Contact
             </a>
                         <div class="dropdown-menu dropdown-secondary" aria-labelledby="navbarDropdownMenuLink-555">
@@ -90,252 +124,87 @@
         <!--Main container-->
         <div class="container">
 
-            <!--Contact Row-->
+            <!--Enroll Row-->
             <div class="row">
                 <div class="col-lg-12 col-md-12 mb-12">
                     <div style="height: 60px;"></div>
+                    <h3 class="h3-responsive font-weight-bold text-center my-4">Life At Campus</h3>
                 </div>
+                <!--Section: Contact-->
+				    
+				    
+
+			        
+				<!--End Section: Contact-->
                 
-                
             </div>
-            <!--End Contact Row-->
-            <!-- Service Section -->
-            <section id="best-features" class="text-center">
+            <!--End Enroll Row-->
 
-                <!-- Heading -->
-                <h5 class="h5-responsive mb-5 font-weight-bold">Our Services</h5>
+            <!-- Grid row -->
+<div class="row">
 
-                <!--Grid row-->
-                <div class="row">
+  <!-- Grid column -->
+  <div class="col-md-12 d-flex justify-content-center mb-5">
 
-                    <!--Grid column-->
-                    <div class="col-md-4 mb-3">
-                        <i class="fa fa-laptop fa-2x blue-text"></i>
-                        <h5 class="h5-responsive my-4">Application Courses</h5>
-                        <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima assumenda deleniti hic.</p>
-                    </div>
-                    <!--Grid column-->
+    <button type="button" class="btn btn-outline-black waves-effect filter" data-rel="all">All</button>
+    <button type="button" class="btn btn-outline-black waves-effect filter" data-rel="1">Events</button>
+    <button type="button" class="btn btn-outline-black waves-effect filter" data-rel="2">Activities</button>
+    <button type="button" class="btn btn-outline-black waves-effect filter" data-rel="3">Classroom</button>
 
-                    <!--Grid column-->
-                    <div class="col-md-4 mb-1">
-                        <i class="fa fa-user-graduate fa-2x blue-text"></i>
-                        <h5 class="h5-responsive my-4">Professional Courses</h5>
-                        <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima assumenda deleniti hic.</p>
-                    </div>
-                    <!--Grid column-->
+  </div>
+  <!-- Grid column -->
 
-                    <!--Grid column-->
-                    <div class="col-md-4 mb-1">
-                        <i class="fa fa-book-open fa-2x blue-text"></i>
-                        <h5 class="h5-responsive my-4">Diploma Courses</h5>
-                        <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima assumenda deleniti hic.</p>
-                    </div>
-                    <!--Grid column-->
+</div>
+<!-- Grid row -->
 
-                </div>
-                <!--Grid row-->
+<!-- Grid row -->
+<div class="gallery row" id="gallery">
 
-            </section>
-            <!-- Service Section -->
-            <!--Grid row-->
-      <div class="row">
+  <!-- Grid column -->
+  <div class="mb-3 pics animation all 2 mb-4 col-lg-4 col-md-4">
+    <img class="img-fluid" src="img/campus/activies_1.jpg" alt="Classroom">
+  </div>
+  <!-- Grid column -->
 
-        <!--Grid column-->
-        <div class="col-md-6 mb-4">
+  <!-- Grid column -->
+  <div class="mb-3 pics animation all 1 mb-4 col-lg-4 col-md-4">
+    <img class="img-fluid" src="img/campus/event_1.jpg" alt="Events">
+  </div>
+  <!-- Grid column -->
 
-          <img src="https://mdbootstrap.com/img/Marketing/mdb-press-pack/mdb-main.jpg" class="img-fluid z-depth-1-half"
-            alt="">
+  <!-- Grid column -->
+  <div class="mb-3 pics animation all 3 mb-4 col-lg-4 col-md-4">
+    <img class="img-fluid" src="img/campus/classroom_2.jpg" alt="Classroom">
+  </div>
+  <!-- Grid column -->
 
-        </div>
-        <!--Grid column-->
+  <!-- Grid column -->
+  <div class="mb-3 pics animation all 1 mb-4 col-lg-4 col-md-4">
+    <img class="img-fluid" src="img/campus/event_2.jpg" alt="Events">
+  </div>
+  <!-- Grid column -->
 
-        <!--Grid column-->
-        <div class="col-md-6 mb-4">
+  <!-- Grid column -->
+  <div class="mb-3 pics animation all 1 mb-4 col-lg-4 col-md-4">
+    <img class="img-fluid" src="img/campus/event_3.jpg" alt="Events">
+  </div>
+  <!-- Grid column -->
 
-          <!-- Main heading -->
-          <h3 class="h3 mb-3">Material Design for Bootstrap</h3>
-          <p>This template is created with Material Design for Bootstrap (
-            <strong>MDB</strong> ) framework.</p>
-          <p>Read details below to learn more about MDB.</p>
-          <!-- Main heading -->
+  <!-- Grid column -->
+  <div class="mb-3 pics animation all 3 mb-4 col-lg-4 col-md-4">
+    <img class="img-fluid" src="img/campus/classroom_3.jpg" alt="Classroom">
+  </div>
+  <!-- Grid column -->
 
-          <hr>
+  <!-- Grid column -->
+  <div class="mb-3 pics animation all 3 mb-4 col-lg-4 col-md-4">
+    <img class="img-fluid" src="img/campus/classroom_4.jpg" alt="Classroom">
+  </div>
+  <!-- Grid column -->
 
-          <p>
-            <strong>400+</strong> material UI elements,
-            <strong>600+</strong> material icons,
-            <strong>74</strong> CSS animations, SASS files, templates, tutorials and many more.
-            <strong>Free for personal and commercial use.</strong>
-          </p>
 
-          <!-- CTA -->
-          <a target="_blank" href="https://mdbootstrap.com/getting-started/" class="btn btn-primary btn-md">Download
-            <i class="fas fa-download ml-1"></i>
-          </a>
-          <a target="_blank" href="https://mdbootstrap.com/components/" class="btn btn-primary btn-md">Live demo
-            <i class="fas fa-image ml-1"></i>
-          </a>
-
-        </div>
-        <!--Grid column-->
-
-      </div>
-      <!--Grid row-->
-
-      <h2 class="my-5 h3 text-center">...and even more</h2>
-
-      <!--First row-->
-      <div class="row features-small mt-5">
-
-        <!--Grid column-->
-        <div class="col-xl-3 col-lg-6">
-          <!--Grid row-->
-          <div class="row">
-            <div class="col-2">
-              <i class="fab fa-firefox fa-2x mb-1 blue-text" aria-hidden="true"></i>
-            </div>
-            <div class="col-10 mb-2 pl-3">
-              <h5 class="feature-title font-bold mb-1">Cross-browser compatibility</h5>
-              <p class="grey-text mt-2">Chrome, Firefox, IE, Safari, Opera, Microsoft Edge - MDB loves all browsers;
-                all browsers love MDB.
-              </p>
-            </div>
-          </div>
-          <!--/Grid row-->
-        </div>
-        <!--/Grid column-->
-
-        <!--Grid column-->
-        <div class="col-xl-3 col-lg-6">
-          <!--Grid row-->
-          <div class="row">
-            <div class="col-2">
-              <i class="fas fa-level-up-alt fa-2x mb-1 blue-text" aria-hidden="true"></i>
-            </div>
-            <div class="col-10 mb-2">
-              <h5 class="feature-title font-bold mb-1">Frequent updates</h5>
-              <p class="grey-text mt-2">MDB becomes better every month. We love the project and enhance as much as
-                possible.
-              </p>
-            </div>
-          </div>
-          <!--/Grid row-->
-        </div>
-        <!--/Grid column-->
-
-        <!--Grid column-->
-        <div class="col-xl-3 col-lg-6">
-          <!--Grid row-->
-          <div class="row">
-            <div class="col-2">
-              <i class="far fa-comments fa-2x mb-1 blue-text" aria-hidden="true"></i>
-            </div>
-            <div class="col-10 mb-2">
-              <h5 class="feature-title font-bold mb-1">Active community</h5>
-              <p class="grey-text mt-2">Our society grows day by day. Visit our forum and check how it is to be a part
-                of our family.
-              </p>
-            </div>
-          </div>
-          <!--/Grid row-->
-        </div>
-        <!--/Grid column-->
-
-        <!--Grid column-->
-        <div class="col-xl-3 col-lg-6">
-          <!--Grid row-->
-          <div class="row">
-            <div class="col-2">
-              <i class="fas fa-code fa-2x mb-1 blue-text" aria-hidden="true"></i>
-            </div>
-            <div class="col-10 mb-2">
-              <h5 class="feature-title font-bold mb-1">jQuery 3.x</h5>
-              <p class="grey-text mt-2">MDB is integrated with newest jQuery. Therefore you can use all the latest
-                features which come along with
-                it.
-              </p>
-            </div>
-          </div>
-          <!--/Grid row-->
-        </div>
-        <!--/Grid column-->
-
-      </div>
-      <!--/First row-->
-
-      <!--Second row-->
-      <div class="row features-small mt-4">
-
-        <!--Grid column-->
-        <div class="col-xl-3 col-lg-6">
-          <!--Grid row-->
-          <div class="row">
-            <div class="col-2">
-              <i class="fas fa-cubes fa-2x mb-1 blue-text" aria-hidden="true"></i>
-            </div>
-            <div class="col-10 mb-2">
-              <h5 class="feature-title font-bold mb-1">Modularity</h5>
-              <p class="grey-text mt-2">Material Design for Bootstrap comes with both, compiled, ready to use libraries
-                including all features as
-                well as modules for CSS (SASS files) and JS.</p>
-            </div>
-          </div>
-          <!--/Grid row-->
-        </div>
-        <!--/Grid column-->
-
-        <!--Grid column-->
-        <div class="col-xl-3 col-lg-6">
-          <!--Grid row-->
-          <div class="row">
-            <div class="col-2">
-              <i class="fas fa-question fa-2x mb-1 blue-text" aria-hidden="true"></i>
-            </div>
-            <div class="col-10 mb-2">
-              <h5 class="feature-title font-bold mb-1">Technical support</h5>
-              <p class="grey-text mt-2">We care about reliability. If you have any questions - do not hesitate to
-                contact us.
-              </p>
-            </div>
-          </div>
-          <!--/Grid row-->
-        </div>
-        <!--/Grid column-->
-
-        <!--Grid column-->
-        <div class="col-xl-3 col-lg-6">
-          <!--Grid row-->
-          <div class="row">
-            <div class="col-2">
-              <i class="fas fa-th fa-2x mb-1 blue-text" aria-hidden="true"></i>
-            </div>
-            <div class="col-10 mb-2">
-              <h5 class="feature-title font-bold mb-1">Flexbox</h5>
-              <p class="grey-text mt-2">MDB fully supports Flex Box. You can forget about alignment issues.</p>
-            </div>
-          </div>
-          <!--/Grid row-->
-        </div>
-        <!--/Grid column-->
-
-        <!--Grid column-->
-        <div class="col-xl-3 col-lg-6">
-          <!--Grid row-->
-          <div class="row">
-            <div class="col-2">
-              <i class="far fa-file-code fa-2x mb-1 blue-text" aria-hidden="true"></i>
-            </div>
-            <div class="col-10 mb-2">
-              <h5 class="feature-title font-bold mb-1">SASS files</h5>
-              <p class="grey-text mt-2">Arranged and well documented .scss files can't wait until you compile them.</p>
-            </div>
-          </div>
-          <!--/Grid row-->
-        </div>
-        <!--/Grid column-->
-
-      </div>
-      <!--/Second row-->
+</div>
+<!-- Grid row -->
 
             
        </div>
@@ -485,6 +354,18 @@
 
     <script type="text/javascript">
         // Initialization
+        $(function() {
+        var selectedClass = "";
+            $(".filter").click(function(){
+                selectedClass = $(this).attr("data-rel");
+                $("#gallery").fadeTo(100, 0.1);
+                $("#gallery div").not("."+selectedClass).fadeOut().removeClass('animation');
+                setTimeout(function() {
+                    $("."+selectedClass).fadeIn().addClass('animation');
+                    $("#gallery").fadeTo(300, 1);
+                }, 300);
+            });
+        });
     </script>
 </body>
 
